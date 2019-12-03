@@ -73,6 +73,8 @@ var drawArray = function(penguins, xScale, yScale)
     
     var lineGenerator = d3.line()
     .x(function(arr, index){
+        console.log(arr);
+        console.log(index);
         return xScale(index)
     })
     .y(function(arr)
